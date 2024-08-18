@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+@media (min-width: 0px) and (max-width:767px){ 
+    div .banner {
+        height: 40vh;
+    }
+    .col-mini-extra{
+        width: 48%;
+    }
+    .col-extra{
+        width: 30%;
+        
+    }
+    .col-mini-extra{
+        width: 48%;
+        
+    }
+    .category{
+        height: 95px;
+        width: 95px;
+    }
+    .category img{
+        height: 60px;
+        width: 60px;
+    }
+    .card-text{
+        font-size:14px ;
+    }
+    .card-text-promo{
+        font-size: 10px;
+    }
+    .img-utama{
+        height: 300px;
+        width: 300px;
+    }
+    .img-variant{
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media (min-width: 768px) { 
+    .col-extra{
+        width: 31%;
+        
+    }
+    
+    .category{
+        height: 100px;
+        width: 100px;
+    }
+    .category img{
+        height: 65px;
+        width: 65px;
+    }
+    .card-body{
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .card-text{
+        font-size:16px ;
+    }
+    .card-text-promo{
+        font-size: 14px;
+    }
+    .img-utama{
+        height: 300px;
+        width: 300px;
+    }
+    .img-variant{
+        height: 75px;
+        width: 75px;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-half{    
+        width: 23%;
+    }
+    .col-lg-extra{
+        width: 15%;
+        height: 200px;
+    }
+    .vh{
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+    .carousel-img {
+
+        object-fit: cover;
+        object-position: center;
+        height: 100%;
+        width: auto;
+        
+    }
+    .category{
+        height: 105px;
+        width: 105px;
+    }
+    .category img{
+        height: 75x;
+        width: 75px;
+    }
+    .justify-content-between-lg{
+        justify-content: space-between;
+    }
+    .img-utama{
+        height: 500px;
+        width: 500px;
+    }
+    .img-variant{
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media (min-width: 1200px) {  
+    .img-utama{
+        height: 500px;
+        width: 500px;
+    }
+    .img-variant{
+        height: 125px;
+        width: 125px;
+    }
+}
+
+@media (min-width: 1400px) {  }
+body{
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+    background: #f4f4f4;
+}
+.qs{
+    font-family: "Quicksand", sans-serif;
+}
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#loading video {
+    width: 100%;
+    height: auto;
+}
+
+#content ,#main,#footer{
+    display: none;
+
+} 
+nav{
+    background: #f2f2f2;
+    
+}
+nav div a img{
+    height: 50px;
+}
+.navbar-toggler{
+    height: 38px;
+}
+.nav-link:hover{
+    color: rgb(255, 223, 0);
+}
+.tl:hover{
+    color: #ffffff;
+}
+.tl::after{
+    color: #ffffff;
+}
+.form-control::placeholder{
+    color: rgb(255, 223, 0);
+}
+
+.banner{
+    height: 45vh;
+    background:linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1)), url(assets/banner1.png), no-repeat ;
+    background-size: cover;
+    background-position: center;
+}
+.bg-f2{
+    background: #fafafa;
+}
+.category{
+    transition: .5s;
+}
+.category:hover{
+    transform: scale(0.95);
+    background-color: rgba(255,223,0)
+}
+a{
+    text-decoration: none;
+}
+.card{
+    transition: .5s ease-in-out;
+    .alamat-hover{
+        display: none;
+    }
+}
+.card:hover{
+    transform: translateY(-5px);
+    .alamat{
+        display: none;
+    }
+    .alamat-hover{
+        display: flex;
+    }
+}
+.card-body{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card-title{
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+.alamat{
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    transition: .5s;
+}
+.alamat-hover{
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+    transition: .5s;
+}
+.rating{
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    text-overflow: ellipsis;
+}
+.card-text{
+    color: rgba(0,0,0,0.8);
+
+
+}
+.card-text:hover{
+    color: rgba(255,223,0,0.8);
+    text-decoration: underline;
+    .alamat-hover{
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 100%;
+        text-overflow: ellipsis;
+        transition: .5s;
+    }
+
+}
+.promo{
+    background: #f2f600;
+    overflow-x: auto;
+    min-width: 85%;
+}
+.promo-container{
+    min-width:600px;
+}
+.promo-text{
+    text-decoration: line-through;
+    margin-bottom: -5px;
+    color: rgba(0,0,0,0.4);
+}
+.harga{
+    margin-top:-2px ;
+    margin-bottom: 1px;
+}
+.offcanvas-body{
+    height: 85vh;
+}
+.cart-item img {
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+}
+.cart-item-controls input {
+    width: 40px;
+    text-align: center;
+    margin: 0 10px;
+}
+.kotak-pembayaran{
+    width: 100%;
+    height: fit-content;
+}
+.img-kotak-pembayaran{
+    height: 100px;
+    width: 100px;
+}
+.sosmed:hover{
+    cursor: pointer;
+}
+.sosmed:active{
+    color: #ffffff;
+}
+.footer-item:hover{
+    color: #f2f2f2;
+}
